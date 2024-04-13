@@ -4,6 +4,8 @@ import NavBar from './components/NavBar'
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
 import About from "./pages/About"
+import Blogs from "./pages/Blogs"
+import Projects from "./pages/Projects"
 
 
 function App() {
@@ -15,7 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   )

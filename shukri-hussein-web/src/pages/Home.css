@@ -1,0 +1,148 @@
+/* Base styling for the container with a complex background image */
+.home-body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://i.imgur.com/EptFUsO.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better contrast */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Styling for the content area */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Headings with enhanced contrast for readability */
+h1, h3, h4 {
+    color: white; /* Ensures high contrast against the dark overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better legibility */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    margin: 20px 0px 20px;
+    font-size: 75px; /* Large font size for main heading */
+    font-family: 'Roboto', sans-serif;
+    left: 200px;
+    top: -20px;
+}
+
+h3 {
+    position: absolute;
+    font-size: 25px;
+    margin-bottom: 50px; /* Spacing for subheadings */
+    font-family: 'Roboto', sans-serif;
+    left: 200px;
+    top: 45px;
+}
+
+h4 {
+    position: absolute;
+    letter-spacing: 2px;
+    font-size: 20px; /* Smaller font size for additional info */
+    font-family: 'Roboto', sans-serif;
+    left: 200px;
+    top: -30px;
+}
+
+/* Styling for links or highlighted text */
+.ln {
+    color: #f90040; /* Bright color for emphasis */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Newsletter form styling */
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    padding: 10px 30px;
+    top: 6px;
+    right: 6px;
+    background: #f9004d;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px #000, 0px 0px 15px #858585;
+    cursor: pointer;
+}
+
+/* Overlay styling for additional contrast */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* General text styling for improved readability */
+.pppp {
+    /* Typography */
+    color: #fcfcfc; /* Corrected color code for better contrast */
+    letter-spacing: 0.05em; /* Adjusted for subtle spacing */
+    font-weight: normal; /* Changed from bold for easier reading */
+    line-height: 1.5; /* Increased line height for improved readability */
+    width: 100%; /* Use full container width */
+    max-width: 600px; /* Maintain optimal reading width */
+    margin-bottom: 1.5em; /* Consistent spacing with line height */
+    font-size: 1.125rem; /* Use relative size for better scalability */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font choice */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Background and border styling */
+    background-color: rgba(0, 0, 0, 0.822); /* Semi-transparent white background */
+    background-image: src("https://i.imgur.com/xW6rLC0.png");
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the background */
+}
+
+/* GitHub profile picture styling */
+.githubp {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 768px) {
+    .home-body {
+        /* Adjust background image positioning or other styles for mobile */
+    }
+
+    .content {
+        left: 5%; /* Adjust the position for smaller screens */
+        font-size: smaller; /* Adjust font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 50px; /* Adjust heading size for smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjust subheading size for smaller screens */
+    }
+
+    h4 {
+        font-size: 15px; /* Adjust additional info size for smaller screens */
+    }
+}

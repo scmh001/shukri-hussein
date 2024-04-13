@@ -1,0 +1,96 @@
+
+
+.about {
+  width: 100%;
+  padding: 200px 0;
+  background-color: #1A1A1A; /* Darker shade for a more elegant look */
+  color: #FFFFFF; /* Ensuring text is readable against the dark background */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, clean font */
+}
+
+
+.about img {
+  height: auto;
+  width: 700px;
+  order: 1; /* Ensures the image is first */
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row; /* This is the default and may not be necessary, but is included for clarity */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.about-text h2 {
+  color: #F9004D; /* Bright accent color for headings */
+  font-size: 48px; /* Adjusted for better readability */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold; /* Emphasizing the heading */
+}
+
+.about-text h5 {
+  color: #CCCCCC; /* Lighter shade for subheadings */
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.h5-2 {
+  color: #F9004D; /* Maintaining accent color consistency */
+}
+
+.about-text p {
+  color: #E0E0E0; /* Slightly lighter text for better readability */
+  letter-spacing: 1px;
+  line-height: 1.2;
+  width: auto; /* Allowing text block to fill available space */
+  max-width: 600px; /* Limiting width for optimal reading experience */
+  margin-bottom: 30px;
+  font-size: 16px;
+  
+}
+
+.btnli {
+  list-style: none;
+}
+
+.contactbtn {
+  background: #F9004D;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none; /* Removing border for a cleaner look */
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 50px; /* More pronounced rounded corners */
+  transition: background-color .4s, color .4s; /* Smooth transition for both background and text color */
+}
+
+.active {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%; /* Full width on smaller screens */
+    order: 1; /* Image still comes first */
+  }
+
+  .about-text {
+    order: 2; /* Text still comes second */
+    width: 100%; /* Full width on smaller screens */
+  }
+}

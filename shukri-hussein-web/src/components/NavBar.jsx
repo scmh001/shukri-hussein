@@ -9,8 +9,9 @@ function NavBar() {
 
   return (
     <React.Fragment>
+    <div className="nav-bar">
     <nav>
-        <Link to="/" className="title">Shukri Hussein</Link>
+        <Link to="/" className="title">Shukri <span className="title2">Hussein</span></Link>
         <div className="menu" onClick={() => {
             setMenuOpen(!menuOpen);
         }}>
@@ -20,16 +21,23 @@ function NavBar() {
         </div>
         <ul className={menuOpen ? "open" : ""}>
             <li>
+                <NavLink to="/projects">Projects</NavLink>
+            </li>
+            <li>
                 <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+                <NavLink to="/blogs">Blogs</NavLink>
             </li>
             <li>
                 <NavLink to="/contact">Contact</NavLink>
             </li>
-            <li>
-                <NavLink to="/home">Home</NavLink>
-            </li>
+            {/* <li>
+                <button className="sub">Subscribe</button>
+            </li> */}
         </ul>
     </nav>
+    </div>
     </React.Fragment>
   )
 }

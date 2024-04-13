@@ -1,0 +1,72 @@
+.contact {
+    background: white;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.title h2 { 
+   color: black;
+   text-align: center;
+   font-size: 75px;
+   margin: 0px auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    font-size: 30px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 25px; 
+    background-color: #191919;
+    margin: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.emoji1 {
+    font-size: 40px;
+    display: block;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+
+.email {
+    font-size: 25px;
+}
+
+.para2 {
+    color: white;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .title h2 {
+        font-size: 50px; /* Smaller font size */
+    }
+
+    .box {
+        flex-direction: column; /* Stack flex items vertically */
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .card {
+        width: 90%; /* Use a percentage-based width */
+        height: auto; /* Adjust height automatically */
+        margin: 15px auto; /* Center cards with automatic margins */
+    }
+
+    .emoji1 {
+        font-size: 60px; /* Smaller emoji size */
+    }
+
+    .email {
+        font-size: 20px; /* Smaller font size */
+    }
+}
